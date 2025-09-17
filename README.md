@@ -1,4 +1,4 @@
-# Queues
+# Queues As ArrayList
 
 This includes methods for Queues that are derived from ArrayList methods
 1. Enqueue(element) adds element to end of queue
