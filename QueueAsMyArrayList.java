@@ -13,7 +13,7 @@ public class QueueAsMyArrayList<T>
     public void enqueue(T element)
     {
         // If our element will surpass max size of queue
-        if (theQueue.getSize()+1 > MAXELEMENTS)
+        if (theQueue.getSize()+1 > theQueue.getMAXELEMENTS())
         {
             throw new IndexOutOfBoundsException
             ("Queue out of bounds"); // automatically returns
@@ -22,7 +22,7 @@ public class QueueAsMyArrayList<T>
         {
             // Add to queue using add method from arrayList
 
-            int index = theQueue.getSize() -1; // Last position of stack
+            int index = theQueue.getSize(); // Last position of stack
             theQueue.add(index, element);
 
 
